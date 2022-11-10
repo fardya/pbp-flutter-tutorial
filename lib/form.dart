@@ -237,7 +237,7 @@ class _MyFormPageState extends State<MyFormPage> {
                             children: <Widget>[
                             Center(child: const Text('Informasi Data')),
                             SizedBox(height: 20),
-                            // TODO: Munculkan informasi yang didapat dari form
+                            // Memunculkan informasi yang didapat dari form
                             Text('Nama Lengkap: ' + _namaLengkap),
                             if (jenjangDiploma) ... [
                                 Text('Jenjang: Diploma'),
