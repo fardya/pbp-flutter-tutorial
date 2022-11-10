@@ -239,20 +239,21 @@ class _MyFormPageState extends State<MyFormPage> {
                             SizedBox(height: 20),
                             // TODO: Munculkan informasi yang didapat dari form
                             Text('Nama Lengkap: ' + _namaLengkap),
-                            // if (jenjangDiploma == true) {
-                            //     Text('Jenjang: Diploma'),
-                            // }
-                            // else if (jenjangSarjana == true) {
-                            //     Text('Jenjang: Sarjana'),
-                            // }
-                            // else if (jenjangMagister == true) {
-                            //     Text('Jenjang: Magister'),
-                            // }
-                            // else {
-                            //     Text('Jenjang: Doktor'),
-                            // }
+                            if (jenjangDiploma) ... [
+                                Text('Jenjang: Diploma'),
+                            ]
+                            else if (jenjangSarjana) ... [
+                                Text('Jenjang: Sarjana'),
+                            ]
+                            else if (jenjangMagister) ... [
+                                Text('Jenjang: Magister'),
+                            ]
+                            else ... [
+                                Text('Jenjang: Doktor'),
+                            ],
                             Text('Umur: $umur'),
                             Text('Kelas PBP: ' + kelasPBP),
+                            Text('Practice Mode: $_nilaiSwitch'),
                             TextButton(
                                 onPressed: () {
                                 Navigator.pop(context);
