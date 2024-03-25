@@ -1,4 +1,4 @@
-# tutorflutter
+# flutter-tutorial
 
 A new Flutter project.
 
